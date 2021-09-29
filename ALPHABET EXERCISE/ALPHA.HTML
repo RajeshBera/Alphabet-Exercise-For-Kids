@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPHABET EXERCISE</title>
+</head>
+<style>
+      .container {
+        text-align: center;
+        padding: 2em; background: linear-gradient(40deg,rgb(255, 137, 245),rgb(255, 145, 0),rgb(255, 5, 138));
+       background-size: cover;
+    }
+
+    button {
+        padding: 1em;
+        margin: 0.8em;
+        font-size: 1em;
+        font-family: 'Times New Roman', Times, serif;
+        background: rgb(217, 217, 253);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.4s;
+        border: none;
+        font-weight: bolder;
+    }
+
+    button:hover {
+        box-shadow:0 0.51em 0em rgb(255, 0, 106);
+        transform: scale(1.4);
+      }
+    img {
+        margin: 1em;
+        border-radius: 10%;
+        box-shadow: 0 0 30px rgb(106, 101, 102);
+        transition: 0.5s;
+    }
+    img:hover{
+        transform: rotate(36deg);
+    }
+    span:nth-child(1) {
+        font-size: 12em;
+    }
+    
+</style>
+
+<body>
+    <DIV class="container">
+        <button onclick="change(1)">A a</button>
+        <button onclick="change(2)">B b</button>
+        <button onclick="change(3)">C c</button>
+        <button onclick="change(4)">D d</button>
+        <button onclick="change(5)">E e</button>
+        <button onclick="change(6)">F f</button>
+        <button onclick="change(7)">G g</button>
+        <button onclick="change(8)">H h</button>
+        <button onclick="change(9)">I i</button>
+        <button onclick="change(10)">J j</button>
+        <button onclick="change(11)">K k</button>
+        <button onclick="change(12)">L l</button>
+        <button onclick="change(13)">M m</button><br>
+        <button onclick="change(14)">N n</button>
+        <button onclick="change(15)">O o</button>
+        <button onclick="change(16)">P p</button>
+        <button onclick="change(17)">Q q</button>
+        <button onclick="change(18)">R r</button>
+        <button onclick="change(19)">S s</button>
+        <button onclick="change(20)">T t</button>
+        <button onclick="change(21)">U u</button>
+        <button onclick="change(22)">V v</button>
+        <button onclick="change(23)">W w</button>
+        <button onclick="change(24)">X x</button>
+        <button onclick="change(25)">Y y</button>
+        <button onclick="change(26)">Z z</button>
+
+    </DIV>
+    <div class="container1">
+        <span id="txt"></span>
+        <span>
+            <img src=""  id="im1">
+            <img src=""  id="im2">
+            <img src=""  id="im3">
+        </span>
+    </div>
+</body>
+<script>
+
+    function change(v1) {
+        var a, b, c, d,e;
+        var items = ["apple", "axe", "aeroplane",
+            "ball", "book", "boat",
+            "cat", "cow", "cake",
+            "doll", "dog", "dove",
+            "egg", "elephant", "eyes",
+            "frog", "fish", "flower",
+            "goat", "girl", "gun",
+            "horn", "hut", "hand",
+            "ice skates", "ice-cream", "igloo",
+            "jug", "jam", "joker",
+            "kitten", "key", "king",
+            "lion", "lemon", "lotus",
+            "mango", "mat", "mouse",
+            "nest", "nut", "neck",
+            "owl", "ox", "oven",
+            "parrot", "pond", "pet",
+            "queen", "quilt", "quill",
+            "ring", "rose", "rabbit",
+            "sun", "sunflower", "shoes",
+            "tiger", "tea-pot", "tulip",
+            "urn", "utensils", "university",
+            "violin", "van", "vase",
+            "wolf", "watch", "watermelon",
+            "x-ray", "x-mas", "xerox",
+            "yacht", "yak", "yoyo",
+            "zebra", "zucchini", "zoo"];
+        a = document.getElementById("im1");
+        b = document.getElementById("im2");
+        c = document.getElementById("im3");
+        d = "https://source.unsplash.com/300x300/?";
+        e = document.getElementById("txt");
+
+        if (v1 == 1) {
+            e.innerHTML="A a";
+            a.src = d + items[0];
+            b.src = d + items[1];
+            c.src = d + items[2];
+        }if (v1 == 2) {
+            e.innerHTML="B b";
+            a.src = d + items[3];
+            b.src = d + items[4];
+            c.src = d + items[5];
+        }if (v1 == 3) {
+            e.innerHTML="C c";
+            a.src = d + items[6];
+            b.src = d + items[7];
+            c.src = d + items[8];
+        }if (v1 == 4) {
+            e.innerHTML="D d";
+            a.src = d + items[9];
+            b.src = d + items[10];
+            c.src = d + items[11];
+        }if (v1 == 5) {
+            e.innerHTML="E e";
+            a.src = d + items[12];
+            b.src = d + items[13];
+            c.src = d + items[14];
+        }if (v1 == 6) {
+            e.innerHTML="F f";
+            a.src = d + items[15];
+            b.src = d + items[16];
+            c.src = d + items[17];
+        }if (v1 == 7) {
+            e.innerHTML="G g";
+            a.src = d + items[18];
+            b.src = d + items[19];
+            c.src = d + items[20];
+        }if (v1 == 8) {
+            e.innerHTML="H h";
+            a.src = d + items[21];
+            b.src = d + items[22];
+            c.src = d + items[23];
+        }if (v1 == 9) {
+            e.innerHTML="I i";
+            a.src = d + items[24];
+            b.src = d + items[25];
+            c.src = d + items[26];
+        }if (v1 == 10) {
+            e.innerHTML="J j";
+            a.src = d + items[27];
+            b.src = d + items[28];
+            c.src = d + items[29];
+        }if (v1 == 11) {
+            e.innerHTML="K k";
+            a.src = d + items[30];
+            b.src = d + items[31];
+            c.src = d + items[32];
+        }if (v1 == 12) {
+            e.innerHTML="L l";
+            a.src = d + items[33];
+            b.src = d + items[34];
+            c.src = d + items[35];
+        }if (v1 == 13) {
+            e.innerHTML="M m";
+            a.src = d + items[36];
+            b.src = d + items[37];
+            c.src = d + items[38];
+        }if (v1 == 14) {
+            e.innerHTML="N n";
+            a.src = d + items[39];
+            b.src = d + items[40];
+            c.src = d + items[41];
+        }if (v1 == 15) {
+            e.innerHTML="O o";
+            a.src = d + items[42];
+            b.src = d + items[43];
+            c.src = d + items[44];
+        }if (v1 == 16) {
+            e.innerHTML="P p";
+            a.src = d + items[45];
+            b.src = d + items[46];
+            c.src = d + items[47];
+        }if (v1 == 17) {
+            e.innerHTML="Q q";
+            a.src = d + items[48];
+            b.src = d + items[49];
+            c.src = d + items[50];
+        }if (v1 == 18) {
+            e.innerHTML="R r";
+            a.src = d + items[51];
+            b.src = d + items[52];
+            c.src = d + items[53];
+        }if (v1 == 19) {
+            e.innerHTML="S s";
+            a.src = d + items[54];
+            b.src = d + items[55];
+            c.src = d + items[56];
+        }if (v1 == 20) {
+            e.innerHTML="T t";
+            a.src = d + items[57];
+            b.src = d + items[58];
+            c.src = d + items[59];
+        }if (v1 == 21) {
+            e.innerHTML="U u";
+            a.src = d + items[60];
+            b.src = d + items[61];
+            c.src = d + items[62];
+        }if (v1 == 22) {
+            e.innerHTML="V v";
+            a.src = d + items[63];
+            b.src = d + items[64];
+            c.src = d + items[65];
+        }if (v1 == 23) {
+            e.innerHTML="W w";
+            a.src = d + items[66];
+            b.src = d + items[67];
+            c.src = d + items[68];
+        }if (v1 == 24) {
+            e.innerHTML="X x";
+            a.src = d + items[69];
+            b.src = d + items[70];
+            c.src = d + items[71];
+        }if (v1 == 25) {
+            e.innerHTML="Y y";
+            a.src = d + items[72];
+            b.src = d + items[73];
+            c.src = d + items[74];
+        }if (v1 == 26) {
+            e.innerHTML="Z z";
+            a.src = d + items[75];
+            b.src = d + items[76];
+            c.src = d + items[77];
+        }
+
+    }
+</script>
+
+</html>
